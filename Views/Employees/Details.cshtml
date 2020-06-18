@@ -1,0 +1,122 @@
+﻿@model Employee_Manager_App.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Start_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Start_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shift)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shift)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>*@
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fav_Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fav_Color)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.Department1.Department_Name, "Department")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department1.Department_Name)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.Manager1.ID, "Manager")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager1.Employee.Name)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.Position1.Position1, "Position")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position1.Position1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

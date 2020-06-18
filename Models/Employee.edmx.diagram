@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="11cb1e8350be4dd2a662811b13b51cb9" Name="Diagram1">
+        <EntityTypeShape EntityType="Employee_Manager_DBModel.Department" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Employee_Manager_DBModel.Employee" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Employee_Manager_DBModel.Manager" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Employee_Manager_DBModel.Position" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Employee_Manager_DBModel.FK_EmployeesDepartment_DepartmentsID" ManuallyRouted="false" />
+        <AssociationConnector Association="Employee_Manager_DBModel.FK_Employees_Managers" ManuallyRouted="false" />
+        <AssociationConnector Association="Employee_Manager_DBModel.FK_EmployeesPosition_PositionsID" ManuallyRouted="false" />
+        <AssociationConnector Association="Employee_Manager_DBModel.FK_Managers_EmployeesID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
