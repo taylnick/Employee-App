@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Log";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Log</h2>
+
+<div>
+    @foreach (string line in ViewBag.Lines)
+    {
+        <h4>@line</h4>
+    }
+</div>
+

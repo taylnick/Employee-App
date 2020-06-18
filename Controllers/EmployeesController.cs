@@ -182,6 +182,12 @@ namespace Employee_Manager_App.Controllers
             return View(emp_list);
         }
 
+        public ActionResult Log()
+        {
+            string[] lines = System.IO.File.ReadAllLines(Server.MapPath("~/App_Data/Log.txt"));
+            ViewBag.Lines = lines;
+            return View();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

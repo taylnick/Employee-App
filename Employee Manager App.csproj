@@ -245,6 +245,7 @@
     <Content Include="Views\Managers\Edit.cshtml" />
     <Content Include="Views\Managers\Index.cshtml" />
     <Content Include="Views\Employees\Retention.cshtml" />
+    <Content Include="Views\Employees\Log.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
